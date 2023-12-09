@@ -1,0 +1,23 @@
+{
+    "name": "Dream Cliff",
+    "short_name": "DC",
+    "description":"",
+    "start_url":"1.Homepage.html",
+    "orientation":"portrait",
+    "icons": [
+        {
+            "src": "/Favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose":"maskable"
+        },
+        {
+            "src": "/Favicons/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}
