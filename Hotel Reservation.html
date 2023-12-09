@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+          <link rel="stylesheet" href="./Hotel Reservation.css">
+          <link rel="apple-touch-icon" sizes="180x180" href="./Favicons/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="./Favicons/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="./Favicons/favicon-16x16.png">
+          <link rel="manifest" href="./Favicons/site.webmanifest">
+          <link rel="mask-icon" href="./Favicons/safari-pinned-tab.svg" color="#5bbad5">
+          <link rel="shortcut icon" href="./Favicons/favicon.ico">
+          <meta name="msapplication-TileColor" content="#2b5797">
+          <meta name="msapplication-config" content="./Favicons/browserconfig.xml">
+          <meta name="theme-color" content="#000000">  
+</head>
+<body id="body7">
+
+    <Section class="intro2"><!--NAVIGATION SECTION-->
+        <div id="mainheading">
+            <header class="mainheader">
+                <div id="nav">
+                    <nav class="nav">                                                  
+                        <ul>
+                            <img src="./Favicons/logo.png" id="li2" class="logo">
+                            <li><a id="li" href="./1.Homepage.html">Home</a></li>
+                            <li><a id="li" href="./2.Hotel Branches.html">Branches</a></li>
+                            <li><a id="li" href="./3.Adventures.html">Adventures</a></li> 
+                            <li><a id="li" href="./5.Restaurants.html">Restaurants</a></li>                       
+                            <li><a id="li" href="./4.Events.html">Events</li>
+                            <li><a id="li" href="./9.Accommodation.html">Accommodation</a></li>                            
+                            <li><a id="li" href="./6.Bookings.html"><u><font color="aqua">Bookings</font></u></a></li>
+                            <li><a id="li" href="./7.About us.html">About us</a></li> 
+                            <li><a id="li" href="./8.Gallery.html">Gallery</a></li>     
+                        </ul>    
+                    </nav>
+                    
+                </div>        
+            </header>    
+            
+        </div>
+    </Section>
+    
+    <section><!-- FORM Section  -->
+
+        <div class="flex">
+            <div>
+                <form method="get" id="the_form">
+
+                    <fieldset> <!--Hotel Reservation-->  
+                        <legend><h2>Hotel reservation</h2></legend>
+
+                        <form method="get" id="the_form">
+                    <section class="HR">
+                        <p>
+                            <label for="arrival">Arrival Date:</label>
+                            <input type="date" required id="hr_a_date"><br>                    
+                            <label for="departure">Departure Date: </label>
+                            <input type="date" required id="hr_d_date">
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="adults">No. of Adults:</label>
+                            <input id="hr_adults" type="number" min="0" required><br>
+                            <label for="children">No. of Children:</label>
+                            <input id="hr_chld" type="number" min="0" >
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="choice">Types of Rooms:</label>
+                            <select name="choice" id="room_choice" required>
+                                <option value="">select</option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
+                                <option value="Triple">Triple</option>
+                            </select>
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="rooms">Number of Rooms</label>
+                            <input type="number" id="no_of_rooms" min="0" value="" required>
+                            <br><br>
+                        </p>
+                        <p>
+                            <Label for="Additionals">Additionals (optional)</Label>
+                            <select name="Additionals" id="facilites">
+                                <option value="">None</option>
+                                <option value="Wi-fi">Wi-Fi</option>
+                                <option value="ac">AC</option>
+                                <option value="both">Both Wifi and AC</option>
+                            </select>
+                            <br><br> 
+                        </p>
+                        <p>
+                            <label for="ROOM VIEW">Room View:</label>
+                            <select name="" id="room_view" required>
+                                <option value="">Select</option>
+                                <option value="pool_view">Pool View</option>
+                                <option value="garden_view">Garden View</option>
+                            </select>
+                        </p>                   
+                    </section>
+                    <center><p>
+                        <label for="bed">Extra Bed ?</label>
+                        <input type="checkbox" id="bed">
+                        <br><br><br>
+                    </p></center>
+
+                    <center>
+                        <table class="price_pool">
+                            <tr>
+                                <td id="t_hr"><u>Category/ scenario</u> </td>
+                                <td id="t_hr"><u>Cost in LKR</u></td>
+                            </tr>
+                            <tr>
+                                <td>Single room </td>
+                                <td>25,000 </td>
+                            </tr>
+                            <tr>
+                                <td>Double </td>
+                                <td>35,000</td>
+                            </tr>
+                            <tr>
+                                <td>Triple </td>
+                                <td>40,000</td>
+                            </tr>
+                            <tr>
+                                <td>Kids above 5 years of age  </td>
+                                <td>5000+ Extra for Meals</td>
+                            </tr>
+                            <tr>
+                                <td>Extra bed</td>
+                                <td>8000</td>
+                            </tr>
+                        </table>
+                    </center>
+
+                    <center><button id="btn_book_now">Book now</button></center>
+                        </form>
+                    </fieldset>
+
+                    <fieldset> <!--Adventure Booking-->
+                <legend><h2>Adventures Booking</h2></legend>
+                
+                <form method="get" id="adventure_form">
+                    <section class="AB">
+                        <p>
+                            <label for="choice">Types of Adventure:</label>
+                            <select name="choice" id="adventure_type" required>
+                                <option value="">Select an Adventure</option>
+                                <option value="Flying ravana zipline">Flying Ravana Zipline</option>
+                                <option value="Air rifling">Air Rifling</option>
+                                <option value="Archery">Archery</option>
+
+                            </select><br><br>
+                        </p> 
+                        <p>                           
+                            <label for="arrival">Travel Date:</label>
+                            <input type="date" required id="ab_T_date">
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="adults">No. of Adults (Local):</label>
+                            <input id="ab_sl_adults" type="number" required min="0" value="0">
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="adults">No. of Adults (Foreign):</label>
+                            <input id="ab_fr_adults" type="number" min="0" value="0">
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="children">No. of Kids (Local)</label>
+                            <input id="ab_sl_child" type="number" min="0" value="0">
+                            <br><br>
+                        </p>
+                        <p>
+                            <label for="children">No. of Kids (Foreign)</label>
+                            <input id="ab_fr_child" type="number" min="0" value="0">
+                            <br><br>
+                        </p>
+
+                    </section>
+                    <center><p>
+                        <label for="guide">Guide ?</label>
+                        <input type="checkbox" id="guide">
+                    </p></center>
+                    <center><button id="btn_book_advt">Book adventures</button></center>
+                </form>
+                <center>
+                    <table class="price_pool">
+                        <tr>
+                            <td id="t_hr"><u>Diving Cost</u> </td>
+                            <td id="t_hr"><u>Cost in LKR</u></td>
+                        </tr>
+                        <tr>
+                            <td>Diving for <u>local</u> Adults (1 hr)</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>Diving for <u>local</u> Kid (above 5 years)</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>Diving for <u>foreign</u> adults</td>
+                            <td>10,000</td>
+                        </tr>
+                        <tr>
+                            <td>Diving for <u>foreign</u> kids</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td id="t_hr" colspan="2"><u>GUIDE CHARGES</u></td>
+                        </tr>
+                        <tr>
+                            <td>For an adult</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>For a Kid</td>
+                            <td>500</td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                </center>
+
+                    </fieldset>             
+
+                </form>
+            </div>
+            <div>
+                <section class="table"> <!--Table-->
+                <table border="2">
+                    <tr>
+                        <th colspan="2">Current Booking</td>
+                    </tr>
+                    <tr>
+                        <td id="t_hr" colspan="2">Hotel Reservation</td>
+                    </tr>
+                    <tr>
+                        <td>Arrival Date</td>
+                        <td id="A_date">Select Date</td>
+                    </tr>
+                    <tr>
+                        <td>Departure Date</td>
+                        <td id="D_date">Select Date</td>
+                    </tr>
+                    <tr>
+                        <td>Adults</td>
+                        <td id="adultout"></td>
+                    </tr>
+                    <tr>
+                        <td >Children</td>
+                        <td id="childout"></td>
+                    </tr>
+                    <tr>
+                        <td>Selected Room View</td>
+                        <td id="room_view_out">Select view</td>
+                    </tr>
+                    <tr>
+                        <td>Selected Room Type</td>
+                        <td id="room_type">Select Room Type</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Rooms</td>
+                        <td id="no_room_out"></td>
+                    </tr>
+                    <tr>
+                        <td>Additional Facilites</td>
+                        <td id="Facilites"></td>
+                    </tr>
+                    <tr>
+                        <th>Hotel Reservation Cost</th>
+                        <th id="hr_cost"></th>
+                    </tr>
+                    <tr>
+                        <td id="t_hr" colspan="2">Adventure Booking</td>
+                    </tr>
+                    <tr>
+                        <td>Type of adventure</td>
+                        <td id="advent_out">Select Adventure Type</td>
+                    </tr>
+                    <tr>
+                        <td>Travel Date</td>
+                        <td id="t_ab_t_date">Select Adventure Date</td>
+                    </tr>
+                    <tr>
+                        <td id="sladultout">Local Adults</td>
+                        <td id="sladultamount"></td>
+                    </tr>
+                    <tr>
+                        <td id="slchildout">Local Kids</td>
+                        <td id="slchildamount"></td>
+                    </tr>
+                    <tr>
+                        <td id="fradultout">Foreign Adults</td>
+                        <td id="fradultamount"></td>
+                    </tr>
+                    <tr>
+                        <td id="frchildout">Foreign Kids</td>
+                        <td id="frchildamount"></td>
+                    </tr>
+                    <tr>
+                        <th> Adventure Booking Cost</th>
+                        <th id="ab_current_cost"></th>
+                    </tr>
+                    <tr>
+                        <td id="t_hr">COST OF CURRENT BOOKING</th>
+                        <th id="c_booking"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">OVERALL BOOKING</th>                        
+                    </tr>
+                    <tr>
+                        <td id="adultout">Adults</td>
+                        <td id="adultamount"></td>
+                    </tr>
+                    <tr>
+                        <td id="childout">Kids</td>
+                        <td id="childamount"></td>
+                    </tr>
+                    <tr>
+                        <td id="ob_rooms">Rooms</td>
+                        <td id="ob_room_amount"></td>
+                    </tr>
+                    <tr>
+                        <td>OVERALL COST OF THE BOOKING</td>
+                        <th id="totalamount"></th>
+                    </tr>
+                </table>
+                </section> 
+            </div>
+        </div>
+        <!-- buttons -->
+        <center><a href="" id="link" class="button"><button type="submit" id="btn_cont_pay">Continue to Pay</button></a> <button id="btn_fav">Add to favourite</button><button id="lylty">Check Loyality</button></center>
+             
+        
+    </section>
+
+    <section class="footer"><!-- FOOTER WITH NAV LINKS -->
+        <footer>
+            <a href="#mainheading" ><img src="./images/up-arrow.png" width="50px" alt="gototop"></a>
+
+            <ul class="footernav">
+                <li><a href="./1.Homepage.html">Home</a></li>
+                <li><a href="./2.Hotel Branches.html">Branches</a></li>
+                <li><a href="./3.Adventures.html">Adventures</a></li>
+                <li><a href="./5.Restaurants.html">Restaurants</a></li>
+                <li><a href="./4.Events.html">Events</a></li>                
+                <li><a href="./9.Accommodation.html">Accommodation</a></li> 
+                <li><a href="./6.Bookings.html">Bookings</a></li>
+                <li><a href="./7.About us.html">About us</a></li> 
+                <li><a href="./8.Gallery.html">Gallery</a></li>    
+            </ul>
+            <div>
+                email: dreamcliff@gmail.com | all rights reserved | Phone: 077 787 8797
+            </div>
+        </footer>
+    </section>
+    
+    <script src="./Hotel Reservation.js"></script>
+</body>
+</html>
